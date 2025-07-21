@@ -55,3 +55,31 @@
     </footer>
 </body>
 </html>
+createChat ( { 
+	webhookUrl : '' , 
+	webhookConfig : { 
+		method : 'POST' , 
+		headers : { } 
+	} , 
+	target : '#n8n-chat' , 
+	mode : 'window' , 
+	chatInputKey : 'chatInput' , 
+	chatSessionKey : 'sessionId' , 
+	loadPreviousSession : true , 
+	metadata : { } , 
+	showWelcomeScreen : false , 
+	defaultLanguage : 'en' , 
+	initialMessages : [ 
+		'¡Hola! 👋' , 
+		'Mi nombre es Nathan. ¿Cómo puedo ayudarte hoy?' 
+	] , 
+	i18n : { 
+		en : { 
+			title : '¡Hola! 👋' , 
+			subtitle : "Inicia un chat. Estamos aquí para ayudarte las 24 horas, los 7 días de la semana." , 
+			footer : '' , 
+			getStarted : 'Nueva conversación' , 
+			inputPlaceholder : 'Escribe tu pregunta..' , 
+		} , 
+	} , 
+} ) ;
